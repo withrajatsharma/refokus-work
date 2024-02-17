@@ -19,7 +19,11 @@ const Navbar = () => {
               );
             else {
               return (
-                <a key={index} className="flex hover:font-bold duration-150 items-center" href="#">
+                <a
+                  key={index}
+                  className="flex hover:font-bold duration-150 items-center"
+                  href="#"
+                >
                   {link == "Work" && (
                     <span
                       style={{ boxShadow: "0 0 .5em #00FF19" }}
