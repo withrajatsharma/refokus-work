@@ -14,7 +14,8 @@ export default {
         xl:"1340px",
       },
       colors:{
-        dark_grey:"#161618"
+        dark_grey:"#161618",
+        diff_white:"#faf5ff",
       },
     },
   },
