@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import img1 from "../assets/work-1.png";
 import img2 from "../assets/work-2.png";
 import img3 from "../assets/work-3.png";
 import img4 from "../assets/work-4.png";
 import img5 from "../assets/work-5.png";
 
-const Work = () => {
+import {gsap} from "gsap";
+import { useGSAP } from "@gsap/react";
 
-  const workImages = [
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+const Work = () => {
+  
+  gsap.registerPlugin(ScrollTrigger);
+  //  ref= useRef(null);
+
+  
+
+  const workImages=[
     {
-      url:img1,top:"50%",left:"50%",isactive:false
+      url:img1,top:"50%",left:"49%",isactive:true
     },
     {
       url:img2,top:"56%",left:"45%",isactive:false
@@ -25,8 +36,9 @@ const Work = () => {
     }
   ]
 
+
   return (
-    <section className="overflow-hidden pb-20 max-w-screen-xl mx-auto text-diff_white relative">
+    <section id="work" className=" overflow-hidden pt-20 pb-20 max-w-screen-xl mx-auto text-diff_white relative">
       <h1 className="text-[38.5vw] text-center leading-none font-medium">
         work
       </h1>

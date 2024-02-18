@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './Button'
-import { twMerge as tm } from 'tailwind-merge'
 
 const Product = ({data}) => {
   return (
