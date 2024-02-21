@@ -9,10 +9,7 @@ const Card = ({width,miniP,title,textWidth="60%",bigTitle,text,buttonText}) => {
             <h2 style={{width:`${textWidth}`}} className='text-3xl font-medium'>{title}</h2>
         </div>
         <div className='px-4 '>
-            
         {bigTitle ? <h1 className='text-8xl font-medium py-10'>{bigTitle}</h1>:<h1 className='text-8xl font-medium py-10'>&nbsp;</h1>}
-
-
         </div>
         <div className='px-4 h-8 flex items-end'>
         {text ?<p className='text-sm opacity-70'>{text}</p>:(buttonText && <Button clr={"transparent"}>{buttonText}</Button>)}
